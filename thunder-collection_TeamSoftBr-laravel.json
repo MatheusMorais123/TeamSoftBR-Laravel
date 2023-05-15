@@ -1,0 +1,136 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "TeamSoftBr-laravel",
+    "dateExported": "2023-05-15T14:27:47.081Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "294360bd-23e5-4a9a-a2d5-b166202f89f3",
+            "colId": "e344e020-91ae-4362-a680-b95bb086cc73",
+            "containerId": "",
+            "name": "CriarCliente",
+            "url": "http://localhost:8000/api/clientes",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-05-13T21:05:42.439Z",
+            "modified": "2023-05-14T01:46:37.306Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n    \"cnpj\": \"2.345.678/0001-80\",\r\n    \"razao_social\": \"Empresa Teste LTDA\",\r\n    \"nome_contato\": \"João\",\r\n    \"telefone\": \"(11) 88888-9999\",\r\n    \"enderecos\": [\r\n        {\r\n            \"logradouro\": \"Rua Oliveira\",\r\n            \"numero\": \"123\",\r\n            \"complemento\": \"Sala 1\",\r\n            \"bairro\": \"Centro\",\r\n            \"cidade\": \"São Paulo\",\r\n            \"estado\": \"SP\",\r\n            \"cep\": \"01000-000\"\r\n        }\r\n       \r\n    ]\r\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "dfbb98f3-c8c4-47dc-bc1c-0c8888ea4492",
+            "colId": "e344e020-91ae-4362-a680-b95bb086cc73",
+            "containerId": "",
+            "name": "ClienteAtualizar",
+            "url": "http://localhost:8000/api/clientes/5",
+            "method": "PUT",
+            "sortNum": 15000,
+            "created": "2023-05-15T13:19:53.050Z",
+            "modified": "2023-05-15T13:21:02.253Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"cnpj\": \"2.345.678/0001-80\",\n    \"razao_social\": \"Empresa Teste LTDA\",\n    \"nome_contato\": \"João Martins\",\n    \"telefone\": \"(11) 88888-9999\",\n    \"enderecos\": [\n        {\n            \"logradouro\": \"Rua do rio\",\n            \"numero\": \"123\",\n            \"complemento\": \"Sala 8\",\n            \"bairro\": \"Centro\",\n            \"cidade\": \"São Paulo\",\n            \"estado\": \"SP\",\n            \"cep\": \"01000-000\"\n        }\n       \n    ]\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "da852d17-9f4c-41b9-8653-d2c42459cda9",
+            "colId": "e344e020-91ae-4362-a680-b95bb086cc73",
+            "containerId": "",
+            "name": "ClienteListarTudo",
+            "url": "http://localhost:8000/api/clientes",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-05-13T21:05:42.501Z",
+            "modified": "2023-05-13T21:50:31.421Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "6ac111cd-6bd8-441e-a1f1-f0215cbb3fc1",
+            "colId": "e344e020-91ae-4362-a680-b95bb086cc73",
+            "containerId": "",
+            "name": "ClienteGetById",
+            "url": "localhost:8000/api/client/5",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-05-13T21:05:42.502Z",
+            "modified": "2023-05-15T13:26:47.259Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "1c3fdf21-2256-4307-af48-455ff188e9bb",
+            "colId": "e344e020-91ae-4362-a680-b95bb086cc73",
+            "containerId": "",
+            "name": "ListarEndereco",
+            "url": "localhost:8000/api/clientes/4/enderecos",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2023-05-15T13:34:39.056Z",
+            "modified": "2023-05-15T13:40:17.997Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "f08b8aee-8680-4092-9b21-15efb617331d",
+            "colId": "e344e020-91ae-4362-a680-b95bb086cc73",
+            "containerId": "",
+            "name": "AdicionarEnderecoCliente",
+            "url": "localhost:8000/api/clientes/4/enderecos",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2023-05-15T13:50:15.271Z",
+            "modified": "2023-05-15T13:52:08.305Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n    \"logradouro\": \"Rua do Capitão Alves\",\r\n    \"numero\": \"179\",\r\n    \"bairro\": \"Vila São Paulo\",\r\n    \"cidade\": \"Mogi das cruzes\",\r\n    \"estado\": \"SP\",\r\n    \"cep\": \"12345-678\",\r\n    \"Complemento\": \"Apt\"\r\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "e4e7d629-6fe8-4b2f-9237-b3f200472631",
+            "colId": "e344e020-91ae-4362-a680-b95bb086cc73",
+            "containerId": "",
+            "name": "RemoverEndereco",
+            "url": "localhost:8000/api/clientes/4/enderecos/6",
+            "method": "DELETE",
+            "sortNum": 60000,
+            "created": "2023-05-15T14:08:38.709Z",
+            "modified": "2023-05-15T14:11:40.545Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "c965b9fb-8f45-41c5-836d-9c0101dbe060",
+            "colId": "e344e020-91ae-4362-a680-b95bb086cc73",
+            "containerId": "",
+            "name": "RemoverCliente",
+            "url": "localhost:8000/api/clientes/4",
+            "method": "DELETE",
+            "sortNum": 70000,
+            "created": "2023-05-15T14:16:36.374Z",
+            "modified": "2023-05-15T14:16:58.449Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}

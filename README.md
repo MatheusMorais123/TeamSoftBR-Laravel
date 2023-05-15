@@ -42,3 +42,13 @@ Enviei um arquivo Dump do banco de dados e a collection da API, que são ferrame
 O arquivo Dump é uma cópia completa da base de dados utilizada pela aplicação. Ele contém todas as tabelas, registros e relacionamentos, permitindo que a base de dados seja facilmente restaurada em um ambiente de desenvolvimento ou produção.
 
 Já a collection da API é uma representação da API em formato JSON. Ela descreve todas as rotas disponíveis, seus parâmetros, possíveis respostas e exemplos de requisições e respostas. É uma ferramenta muito útil para testar a API e verificar se todas as rotas estão funcionando corretamente.
+
+
+Obs: Estou enviando uma Dump do banco de dados e a collection do thunder-client na raiz do projeto configuração do .env
+
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=teamSoftBr
+DB_USERNAME=root
+DB_PASSWORD=
